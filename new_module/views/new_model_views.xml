@@ -1,0 +1,19 @@
+<odoo>
+	<record id="new_model_view_form" model="ir.ui.view">
+<field name="name">new.model.form</field>
+<field name="model">new.model</field>
+<field name="arch" type="xml">
+	<form string="Test Form">
+        		<sheet>
+          			<group>
+            				<group>
+                				<field name="name"/>
+                				<field name="price" attrs="{'invisible' : [('display_price', '=', False)]}"/>
+                				<field name="display_price" attrs="{'invisible' : 1}"/>
+            				</group>
+          			</group>
+        		</sheet>
+			</form>
+		</field>
+	</record>
+</odoo>

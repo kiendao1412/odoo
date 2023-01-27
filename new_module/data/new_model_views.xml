@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<odoo>
+<record id="new_model_action" model="ir.actions.act_window">
+<field name="name">NewModel</field>
+<field name="res_model">new.model</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+<record id="new_model_view_tree" model="ir.ui.view">
+<field name="name">new.model.tree</field>
+<field name="model">new.model </field>
+		<field name="arch" type="xml">
+			<tree string="New Model Table">
+				<field name="name"/>
+				<field name="price"/>
+			</tree>
+		</field>
+</record>
+	<record id="new_model_view_form" model="ir.ui.view">
+<field name="name">new.model.form</field>
+<field name="model">new.model</field>
+<field name="arch" type="xml">
+	<form string="Test Form">
+        		<sheet>
+          			<group>
+            				<group>
+                				<field name="name"/>
+                				<field name="price"/>
+            				</group>
+          			</group>
+        		</sheet>
+			</form>
+		</field>
+	</record>
+<record id="new_model_view_search" model="ir.ui.view">
+<field name="name">new.model.search</field>
+<field name="model">new.model</field>
+		<field name="arch" type="xml">
+			<search string="New Model Search">
+				<field name="name"/>
+				<field name="price"/>
+			</search>
+		</field>
+	</record>
+</odoo>

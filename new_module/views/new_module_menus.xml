@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<menuitem id="new_module_menu_root" name="New Module">
+		<menuitem id="container_menu" name="Container">
+			<menuitem id="new_model_menu_action" action="new_model_action"/>
+		</menuitem>
+
+	</menuitem>
+</odoo>

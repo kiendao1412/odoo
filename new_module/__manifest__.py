@@ -3,7 +3,7 @@
     'version': '14.0.1.1.0',
     'depends': ['base'],
     'description': """Made by Kiendaotrung - The new module""",
-    'price': '1.0',
+    'price': '0.01',
     'currency': 'USD',
     'data': [
         'data/new_model_views.xml',
